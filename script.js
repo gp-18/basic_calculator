@@ -1,5 +1,6 @@
 const display = document.querySelector("#display");
 const buttons = document.querySelectorAll("button");
+const digit = document.querySelector("#digit");
 
 buttons.forEach((item) => {
   item.onclick = () => {
@@ -13,7 +14,9 @@ buttons.forEach((item) => {
     } else if (display.innerText == "" && item.id == "equal") {
       display.innerText = "Empty!";
       setTimeout(() => (display.innerText = ""), 2000);
-    } else {
+    } else if(string.length()>="8"){
+      digit.style.fontSize = "xx-small";
+    }else {
       display.innerText += item.id;
     }
   };
