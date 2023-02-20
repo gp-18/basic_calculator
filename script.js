@@ -5,11 +5,11 @@ const buttons = document.querySelectorAll("button");
 
 buttons.forEach((item) => {
   item.onclick = () => {
-    // let string2 = display.innerText.toString();
+    let string2 = display.innerText.toString();
 
-    // if(string2.length >= 8){
-    //   display.innerText="LIMIT EXCEEDED";
-    // }
+    if(string2.length >= 8){
+      display.style.fontSize = "30px";
+    }
     
     if (item.id == "clear") {
       display.innerText = "";
