@@ -10,6 +10,15 @@ buttons.forEach((item) => {
     if(string2.length >= 8){
       display.style.fontSize = "30px";
     }
+
+    if(string2.length >= 13){
+      display.style.fontSize = "20px";
+    }
+
+
+    if(string2.length >= 17){
+      display.innerText = "LIMIT EXCEEDED";
+    }
     
     if (item.id == "clear") {
       display.innerText = "";
