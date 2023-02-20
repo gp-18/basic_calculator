@@ -16,8 +16,9 @@ buttons.forEach((item) => {
     }
 
 
-    if(string2.length >= 17){
-      display.innerText = "LIMIT EXCEEDED";
+    if(string2.length >= 20){
+      let s = "LIMIT EXCEEDED"
+      display.innerText = s;
     }
     
     if (item.id == "clear") {
